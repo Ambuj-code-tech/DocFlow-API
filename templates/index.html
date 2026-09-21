@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DocFlow</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>DocFlow</h1>
+
+        <p class="subtitle">
+            Upload and process your documents
+        </p>
+
+        <form
+            action="/documents/upload"
+            method="post"
+            enctype="multipart/form-data"
+        >
+
+            <label for="file">
+                Choose a document
+            </label>
+
+            <input
+                type="file"
+                id="file"
+                name="file"
+                required
+            >
+
+            <button type="submit">
+                Upload
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+This is a sample document for the DocFlow API.
+
+DocFlow will eventually extract, transform,
+validate, and generate different representations
+of uploaded documents.
