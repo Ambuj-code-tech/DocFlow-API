@@ -3,35 +3,47 @@
 A full-stack document processing API built with Python and Starlette, featuring file uploads, validation, server-side HTML rendering, and a simple web interface.
 
 ## Current Features
-
-- Starlette-based web application
-- HTTP routing
-- JSON API endpoints
-- Path parameters
-- JSON request bodies
-- Multipart file uploads
-- File validation
-- HTML templates with Jinja2
-- Static CSS files
-- Server-side rendered upload results
+- Document Upload
+- Document Management
+- Document Versioning
+- Text Extraction
+- Document Search
+- Background Job Processing
+- Database
+- Authentication & Authorization
+- Rate Limiting
+- Caching
+- Proper Error Handling
+- Pagination & Filtering
+- API Documentation
+- Testing
+- Docker & Deployment
 
 ## Project Structure
 
 ```text
-docflow-api/
+DocFlowAPI/
 │
 ├── app/
-│   └── main.py
+│   ├── __init__.py
+│   ├── main.py
+│   │
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   └── documents.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── document.py
+│   │
+│   └── database/
+│       ├── __init__.py
+│       └── database.py
 │
 ├── templates/
-│   ├── index.html
-│   └── result.html
-│
 ├── static/
-│   └── style.css
-│
 ├── uploads/
 │
+├── README.md
 ├── .gitignore
-├── requirements.txt
-└── README.md
+└── requirements.txt
